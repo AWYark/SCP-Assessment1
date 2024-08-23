@@ -1,0 +1,158 @@
+body{
+    font-family: 'Times New Roman', Times, serif; 
+    /* background-color: rgb(203, 173, 123); */
+    margin: auto;}
+
+.coverPage{
+    width: 80%;
+    height: max-content;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* setup the grid columns */
+#col-1 { width: 8.33%; }
+#col-2 { width: 16.66%; }
+#col-3 { width: 25%; }
+#col-4 { width: 33.33%; }
+#col-5 { width: 41.66%; }
+#col-6 { width: 50%; }
+#col-7 { width: 58.33%; }
+#col-8 { width: 66.66%; }
+#col-9 { width: 75%; }
+#col-10 { width: 83.33%; }
+#col-11 { width: 91.66%; }
+#col-12 { width: 100%; }
+
+[id*="col"]
+{
+    float: left;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    border-style: solid;
+}
+
+/* Set row rules (set row first then columns) */
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 10px;
+}
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: #707070;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #6f1307;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+
+    .navbar img {
+      /* float: none; */
+      display: block;
+    }
+  }
+
+  .logo{
+    float: right;
+    height: 40px;
+    width: 40px;
+    padding-right: 5px;
+  }
+
+  
+
+  .main{
+    display: flex;
+    justify-content: center;
+  }
+
+  .LeftCol{
+    background-color: #000;
+    border: #000 solid;
+    display: flex;
+    flex-direction: column;
+    /* color: aliceblue; */
+    text-overflow: ellipsis;
+  }
+
+  .LeftCol a{
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    /* text-decoration: none; */
+    font-size: 17px;
+  }
+
+  .LeftCol a:hover{
+    background-color: #6f1307;
+  }
+
+  @media screen and (max-width: 500px) {
+    .LeftCol a {
+      float: none;
+      display: block;
+    }
+  }
+
+  .mainDiv{
+    background-color: rgb(203, 173, 123);
+    height: max-content;
+    /* width: auto; */
+    font-size: 3vw;
+  }
+
+  .RightCol{
+    background-color: #000;
+
+  }
+
+  h1{
+    font-size: 8vw;
+  }
+
+  h2{
+    font-size: 6vw;
+  }
+
+  h3{
+    font-size: 4vw;
+  }
+
+  h4{
+    font-size: 3vw;
+  }
+
+  p{
+    font-size: 3vw;
+  }
